@@ -1,4 +1,25 @@
+--11.02.2021
+DESC asur.tab_asset
+
 -- 10.02.2021
+SELECT
+    owner,
+    COUNT(*)
+FROM
+    all_objects
+GROUP BY
+    owner
+ORDER BY
+    2 DESC;
+
+-- количество объектов учёта
+select count(*) from asur.tab_asset;
+
+-- Объекты Отделения Барнаул
+select count(*) from asur.tab_asset
+
+
+-- where 
 
 -- количество объектов по владельцам, в порядке убывания
 SELECT
